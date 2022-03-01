@@ -5,7 +5,7 @@ Code for Findings of ACL 2022 Paper **"Sentiment Word Aware Multimodal Refinemen
 ## Clone
 Clone this repo and install requirements. 
 
-    git clone 
+    git clone https://github.com/albertwy/SWRM.git
     pip install -r requirements.txt
 
 ## Dataset
