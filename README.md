@@ -1,4 +1,4 @@
-# SWCN
+# SWRM
 Code for Findings of ACL 2022 Paper **"Sentiment Word Aware Multimodal Refinement for Multimodal Sentiment Analysis with ASR Errors"**
 
 
@@ -9,7 +9,7 @@ Clone this repo and install requirements.
     pip install -r requirements.txt
 
 ## Dataset
-Download dataset files and put them in *dataset* directory
+Download dataset files and put them in the *dataset* directory
 - [Cow Transfer](https://cowtransfer.com/s/15d1bc5193a445) with code: r9etft
 
 Download pre-trained BERT models（provided by [MMSA Project](https://github.com/thuiar/MMSA)）and specify the dir name in the Code(models/subNets/Bert*.py) 

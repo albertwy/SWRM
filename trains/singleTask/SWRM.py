@@ -46,7 +46,7 @@ def intensity_or_sentiment_value(word_list):
 
 
 
-class SWCN():
+class SWRM():
     def __init__(self, args):
         assert args.train_mode == 'regression'
 

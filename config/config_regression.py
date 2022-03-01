@@ -13,11 +13,11 @@ class ConfigRegression():
             'graph_mfn': self.__Graph_MFN,
             'mult': self.__MULT,
             'misa': self.__MISA,
-            'swcn': self.__SWCN,
+            'swrm': self.__SWRM,
             'self_mm': self.__SELF_MM
         }
         if (args.expSetting).split("_")[0] == "ibm":
-            HYPER_MODEL_MAP['swcn'] = self.__TSWCN
+            HYPER_MODEL_MAP['swrm'] = self.__TSWRM
 
         # hyper parameters for datasets
         HYPER_DATASET_MAP = self.__datasetCommonParams(args)
@@ -111,69 +111,8 @@ class ConfigRegression():
         }
         return tmp
     
-   
 
-    def __TSWCN(self):
-        tmp = {
-            'commonParas':{
-                'need_data_aligned': False,
-                'need_model_aligned': False,
-                'need_normalized': False,
-                'use_bert': True,
-                'use_finetune': True,
-                'save_labels': False,
-                'early_stop': 8,
-                'update_epochs': 4
-            },
-            # dataset
-            'datasetParas':{
-                'mosi':{
-                    # the batch_size of each epoch is update_epochs * batch_size
-                    'batch_size': 16,
-                    'learning_rate_bert': 5e-5,
-                    'learning_rate_audio': 0.005,
-                    'learning_rate_video': 0.005,
-                    'learning_rate_other': 0.001,
-                    'weight_decay_bert': 0.001,
-                    'weight_decay_audio': 0.001,
-                    'weight_decay_video': 0.001,
-                    'weight_decay_other': 0.001,
-                    # feature subNets
-                    'a_lstm_hidden_size': 16,
-                    'v_lstm_hidden_size': 32,
-                    'a_lstm_layers': 1,
-                    'v_lstm_layers': 1,
-                    'text_out': 768, 
-                    'audio_out': 16,
-                    'video_out': 32, 
-                    'a_lstm_dropout': 0.0,
-                    'v_lstm_dropout': 0.0,
-                    't_bert_dropout':0.1,
-                    # post feature
-                    'post_fusion_dim': 128,
-                    'post_text_dim':32,
-                    'post_audio_dim': 16,
-                    'post_video_dim': 32,
-                    'post_fusion_dropout': 0.0,
-                    'post_text_dropout': 0.1,
-                    'post_audio_dropout': 0.1,
-                    'post_video_dropout': 0.0,
-                    # res
-                    'H': 3.0
-                }
-            },
-        }
-
-        for key in self.paras.keys():
-            if ("dropout" in key) or ("weight_decay" in key) or ("learning_rate" in key) or ("H" in key):
-                tmp["datasetParas"]["mosi"][key] = float(self.paras[key])
-            else:
-                tmp["datasetParas"]["mosi"][key] = int(float(self.paras[key]))
-
-        return tmp
-
-
-    def __TSWCN(self):
+    def __TSWRM(self):
         tmp = {
             'commonParas':{
                 'need_data_aligned': False,
@@ -226,7 +165,7 @@ class ConfigRegression():
         return tmp
 
 
-    def __SWCN(self):
+    def __SWRM(self):
         tmp = {
             'commonParas':{
                 'need_data_aligned': False,

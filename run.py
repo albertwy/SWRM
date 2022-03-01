@@ -156,8 +156,8 @@ def parse_args():
                         help='T/TA/TV/TAV')
     parser.add_argument('--train_mode', type=str, default="regression",
                         help='regression')
-    parser.add_argument('--modelName', type=str, default='swcn',
-                        help='support lf_dnn/ef_lstm/tfn/lmf/mfn/graph_mfn/mult/misa/self_mm/swcn')
+    parser.add_argument('--modelName', type=str, default='swrm',
+                        help='support lf_dnn/ef_lstm/tfn/lmf/mfn/graph_mfn/mult/misa/self_mm/swrm')
     parser.add_argument('--expSetting', type=str, default='speechbrain_asr_train',
                         help='support speechbrain_asr_train, ibm_asr_train, xf_asr_train, gold_asr_train')    
     parser.add_argument('--datasetName', type=str, default='mosi',

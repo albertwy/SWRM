@@ -24,7 +24,7 @@ class ATIO():
             'graph_mfn': Graph_MFN,
             'mult': MULT,
             'misa': MISA,
-            'swcn': SWCN,
+            'swrm': SWRM,
             'self_mm': SELF_MM,
         }
     

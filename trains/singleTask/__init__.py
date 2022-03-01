@@ -6,7 +6,7 @@ from trains.singleTask.MFN import MFN
 from trains.singleTask.Graph_MFN import Graph_MFN
 from trains.singleTask.MULT import MULT
 from trains.singleTask.MISA import MISA
-from trains.singleTask.SWCN import SWCN 
+from trains.singleTask.SWRM import SWRM
 
 
-__all__ = ['EF_LSTM', 'LF_DNN', 'LMF', 'TFN', 'MFN', 'Graph_MFN', 'MULT', 'MISA', 'SWCN']
+__all__ = ['EF_LSTM', 'LF_DNN', 'LMF', 'TFN', 'MFN', 'Graph_MFN', 'MULT', 'MISA', 'SWRM']

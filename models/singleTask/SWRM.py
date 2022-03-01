@@ -18,11 +18,11 @@ from models.subNets.BertTextEncoder import BertTextEncoder
 from models.subNets.BertSelfTokenEncoder import BertSelfTokenEncoder
 
 
-__all__ = ['SWCN']
+__all__ = ['SWRM']
 
-class SWCN(nn.Module):
+class SWRM(nn.Module):
     def __init__(self, args):
-        super(SWCN, self).__init__()
+        super(SWRM, self).__init__()
         # text subnets
         self.aligned = args.need_data_aligned
 
@@ -117,7 +117,7 @@ class SWCN(nn.Module):
 
 
 
-        # swcn add sentiment
+        # swrm add sentiment
 
         candidate_embeddings = embedding_map(extracted_indexs)
 
