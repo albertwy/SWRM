@@ -1,0 +1,5 @@
+.DS_Store
+asr_ibm_unaligned_50.pkl
+asr_speechbrain_unaligned_50.pkl
+asr_xf_unaligned_50.pkl
+asr_gold_unaligned_50.pkl
