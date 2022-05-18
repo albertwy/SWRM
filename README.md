@@ -6,6 +6,7 @@ Code for Findings of ACL 2022 Paper **"Sentiment Word Aware Multimodal Refinemen
 Clone this repo and install requirements. 
 
     git clone https://github.com/albertwy/SWRM.git
+    # python3.8
     pip install -r requirements.txt
 
 ## Dataset
@@ -23,6 +24,7 @@ Download pre-trained BERT models（provided by [MMSA Project](https://github.com
     python run.py --modelName *** --expSetting ***
 
 ## Paper
+[Sentiment Word Aware Multimodal Refinement for Multimodal Sentiment Analysis with ASR Errors](https://arxiv.org/abs/2203.00257)
 
 
 ## Acknowledgments
