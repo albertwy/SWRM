@@ -24,7 +24,7 @@ Download pre-trained BERT models（provided by [MMSA Project](https://github.com
     python run.py --modelName *** --expSetting ***
 
 ## Paper
-[Sentiment Word Aware Multimodal Refinement for Multimodal Sentiment Analysis with ASR Errors](https://arxiv.org/abs/2203.00257)
+[Sentiment Word Aware Multimodal Refinement for Multimodal Sentiment Analysis with ASR Errors](https://aclanthology.org/2022.findings-acl.109/)
 
 
 ## Acknowledgments
